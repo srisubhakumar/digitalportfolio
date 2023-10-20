@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(45deg, #0a0a0a,#009688);
+    font-family: "SF PRO TEXT";
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    padding: 10px;
+    background: #fff;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 18px;
+}
+main::after{
+    content: "";
+    background-color: #cacaff;
+    width: 500px;
+    height: 350px;
+    display: block;
+    transform: rotate(6deg) scale(1.05);
+    position:absolute;
+    top:7px;
+    z-index: -1;
+    border: 1px solid #fff;
+    border-radius: 18px;
+}
+main::before{
+    content: "";
+    background-color: #cacaff;
+    width: 500px;
+    height: 350px;
+    display: block;
+    transform: rotate(-7deg) scale(1.02);
+    position:absolute;
+    top: 2px;
+    z-index: -1;
+    border: 1px solid #fff;
+    border-radius: 18px;
+}
+main form{
+    padding: 20px;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #009688;
+}
+main form input{
+    display: block;
+    width: 80%;
+    height: 43px;
+    padding: 0 10x;
+    font-size: 18px;
+    margin: 6px auto;
+    border: none;
+    border-bottom: 1px solid #009688;
+    outline: none;
+}
+main form input::placeholder{
+    color: #009688;
+}
+main form input[type="submit"]{
+    border: 2px solid #009688;
+    color: #009688;
+    margin-top: 47px;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: 200ms;
+}
+main form input[type="submit"]:hover{
+    background-color: #009688;
+    color: white;
+}
